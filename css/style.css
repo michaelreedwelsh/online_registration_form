@@ -183,13 +183,17 @@ label {
 
  input[id="zipcode"] {
  	width: 50%;
- 	float: right;
+ 	float: left;
  }
 
  .comments label {
  	font-size: 1rem;
  }
-
+label[for="zipcode"]{
+	margin-top: 5px;
+	display: block;
+	clear: both;
+}
 
 /****************MEDIA QUERIES!!!!!!********/
 
