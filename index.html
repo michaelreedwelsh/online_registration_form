@@ -6,6 +6,7 @@
         <meta name="author" content="Michael Reed Welsh">
         <meta name="description" content="form project">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
@@ -22,12 +23,12 @@
 
 					<div class="form_element">
                     	<label for="name">Full Name</label>
-                    	<input autofocus type="text" id="name" name="user_name" placeholder="Required">
+                    	<input type="text" id="name" name="user_name" placeholder="Required"><span>Please put your full name</span>
                     </div>
 
                     <div class="form_element">
                     	<label for="mail">Email Address</label>
-                    	<input type="email" id="mail" name="user_email" placeholder="Required">
+                    	<input type="email" id="mail" name="user_email" placeholder="Required"><span>Don't be super long please</span>
                     </div>
 
                     <div class="form_element">
@@ -155,8 +156,11 @@
 			</form>
 		</div>
 		<footer>
-            <p>Copyright The Code Review</p>
+            <p>&copy; Michael Reed Welsh 2016</p>
         </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+   		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    	<script src="js/app.js"></script>
 	</body>
 
 </html>

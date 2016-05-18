@@ -16,6 +16,29 @@
 	left: 0;
 }
 
+span {
+	display: none;
+	position: absolute;
+	right: 100%;
+	top: 0;
+	left: 103%;
+	background-color: orange;
+	width: 160px;
+	padding: 10px 15px;
+	border-radius: 5px;
+}
+span:after {
+	content: " ";
+	border: solid transparent;
+	position: absolute;
+	top: 50%;
+	right: 100%;
+	border-right-color: orange;
+	border-width: 8px;
+	margin-top: -8px;
+
+}
+
 .container {
 	position: relative;
 	width: 90%;
@@ -42,12 +65,7 @@ footer {
 	text-align: center;
 }
 
-legend {
-	font-family: "Lora", serif;
-	font-size: 1.4rem;
-	padding-top: 30px;
-	font-weight: bold;
-}
+
 
 .container h1 {
 	margin-bottom: 15px;
@@ -59,6 +77,19 @@ h2 {
 	margin-top: 25px;
 	margin-bottom: 20px;
 	padding-top: 20px;
+}
+
+/*FORM ELEMENTS */
+
+.form_element {
+	position: relative;
+}
+
+legend {
+	font-family: "Lora", serif;
+	font-size: 1.4rem;
+	padding-top: 30px;
+	font-weight: bold;
 }
 
 fieldset {
@@ -198,6 +229,7 @@ label[for="zipcode"]{
 /****************MEDIA QUERIES!!!!!!********/
 
 @media(min-width: 760px) {
+
 	
 	.container {
 		width: 80%;
@@ -242,6 +274,10 @@ legend {
 }	
 }
 @media(min-width: 1024px) {
+	span {
+		display: block;
+	}
+	
 	.container {
 		width:60%;
 	}
