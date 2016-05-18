@@ -28,7 +28,12 @@
 
                     <div class="form_element">
                     	<label for="mail">Email Address</label>
-                    	<input type="email" id="mail" name="user_email" placeholder="Required"><span>Don't be super long please</span>
+                    	<input type="email" id="mail" name="user_email" placeholder="Required"><span class="match">Must match confirm field</span>
+                    </div>
+
+                    <div class="form_element">
+                    	<label for="mail_confirm">Confirm Email</label>
+                    	<input type="email" id="mail_confirm" name="user_email_confirm" placeholder="Required"><span class="match">Make this match your email</span>
                     </div>
 
                     <div class="form_element">
@@ -149,7 +154,7 @@
                 	<textarea></textarea>
             	</div>
                 
-                <button class="btn" type="submit">Sign Up</button>
+                <button class="btn" type="submit" id="butt">Sign Up</button>
 
                 
 
